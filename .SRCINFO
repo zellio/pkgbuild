@@ -1,0 +1,18 @@
+pkgbase = halyard-git
+	pkgdesc = A tool for configuring, installing, and updating Spinnaker.
+	pkgver = 1.28.0
+	pkgrel = 1
+	url = https://github.com/spinnaker/halyard
+	arch = x86_64
+	groups = spinnaker
+	license = Apache
+	makedepends = tar
+	depends = jdk8-openjdk
+	depends = ca-certificates-utils
+	provides = halyard
+	conflicts = halyard
+	source = halyard-git-1.28.0::git+https://github.com/spinnaker/halyard.git#tag=version-1.28.0
+	md5sums = SKIP
+
+pkgname = halyard-git
+
