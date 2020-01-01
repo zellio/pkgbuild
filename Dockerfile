@@ -6,8 +6,6 @@ MAINTAINER Zachary Elliott <contact@zell.io>
 
 ENV package ""
 
-ADD .git /var/lib/notroot/repo/.git
-
 RUN useradd --home-dir /var/lib/notroot --user-group notroot
 
 RUN pacman --sync --refresh --noconfirm archlinux-keyring && \
@@ -15,6 +13,8 @@ RUN pacman --sync --refresh --noconfirm archlinux-keyring && \
     pacman --sync --refresh --noconfirm base-devel git
 
 RUN echo "notroot	ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/00_notroot
+
+ADD .git /var/lib/notroot/repo/.git
 
 RUN chown -R notroot:notroot /var/lib/notroot
 
