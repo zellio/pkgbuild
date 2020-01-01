@@ -17,17 +17,17 @@ prepare() {
 }
 
 build() {
-    cd "$pkgname-$pkgver"
-    ./configure --prefix=/usr --sysconfdir=/etc
-    make
+	cd "$pkgname-$pkgver"
+	./configure --prefix=/usr --sysconfdir=/etc
+	make
 }
 
 check() {
-    cd "$pkgname-$pkgver"
-    make -k check
+	cd "$pkgname-$pkgver"
+	make -k check
 }
 
 package() {
-    cd "$pkgname-$pkgver"
-    make DESTDIR="$pkgdir/" install
+	cd "$pkgname-$pkgver"
+	make DESTDIR="$pkgdir/" install
 }
