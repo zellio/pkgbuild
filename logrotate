@@ -1,0 +1,6 @@
+/var/log/spinnaker/halyard/*log {
+	missingok
+    notifempty
+    create 640 halyard spinnaker
+    compress
+}

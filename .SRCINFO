@@ -1,0 +1,26 @@
+pkgbase = halyard
+	pkgdesc = A tool for configuring, installing, and updating Spinnaker.
+	pkgver = 1.28.0
+	pkgrel = 1
+	url = https://github.com/spinnaker/halyard
+	arch = x86_64
+	groups = spinnaker
+	license = Apache
+	makedepends = tar
+	depends = jdk8-openjre
+	depends = ca-certificates-utils
+	provides = halyard
+	conflicts = halyard
+	backup = usr/lib/halyard/1.28.0/config/halyard.yml
+	backup = usr/lib/halyard/1.28.0/config/halyard-user
+	source = halyard-1.28.0.tar.gz::https://storage.googleapis.com/spinnaker-artifacts/halyard/1.28.0/debian/halyard.tar.gz
+	source = logrotate
+	source = sysusers
+	source = service
+	sha256sums = 3afce7e62f0d5d248989c0c40af093d17d0f47b6fed96786ece637302b50513c
+	sha256sums = 1beeeec3b1d7a6f92a672b8c2233548cb3952042f7802dd0a199305844d9a475
+	sha256sums = 1253c1da37b553e4edc81ccfcb5b13ae0dca8406ed0f86da3ccee66dc82be2ee
+	sha256sums = 3dd03dd55085ae1789f760dbc4013bdf18a6b64bd44aaf458f13246e63f5d5d9
+
+pkgname = halyard
+

@@ -1,0 +1,5 @@
+u halyard - "Halyard system user"
+g halyard - "Halyard system group"
+g spinnaker - "Spinnaker system group"
+m halyard halyard
+m halyard spinnaker

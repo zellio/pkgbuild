@@ -1,0 +1,14 @@
+[Unit]
+Description=A tool for managing the lifecycle of a Spinnaker installation
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=10
+Type=forking
+User=halyard
+group=spinnaker
+ExecStart=/usr/bin/halyard
+
+[Install]
+WantedBy=multi-user.target
