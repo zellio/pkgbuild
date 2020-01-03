@@ -2,10 +2,10 @@
 
 pkgname=google-cloud-sdk
 pkgver=274.0.1
-pkgrel=1
-pkgdesc="A tool for configuring, installing, and updating Spinnaker."
+pkgrel=2
+pkgdesc="The Cloud SDK is a set of tools for Google Cloud Platform."
 arch=('x86_64')
-url='https://github.com/spinnaker/halyard'
+url='https://cloud.google.com/sdk/'
 license=('Apache')
 groups=()
 depends=(python2 python)
