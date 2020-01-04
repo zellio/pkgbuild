@@ -2,13 +2,13 @@
 
 pkgname=halyard
 pkgver=1.28.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A tool for configuring, installing, and updating Spinnaker."
 arch=('x86_64')
 url='https://github.com/spinnaker/halyard'
 license=('Apache')
 groups=('spinnaker')
-depends=(jdk8-openjre ca-certificates-utils)
+depends=(jdk8-openjdk ca-certificates-utils)
 makedepends=(tar)
 provides=('halyard')
 conflicts=('halyard')

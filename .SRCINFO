@@ -1,13 +1,13 @@
 pkgbase = halyard
 	pkgdesc = A tool for configuring, installing, and updating Spinnaker.
 	pkgver = 1.28.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/spinnaker/halyard
 	arch = x86_64
 	groups = spinnaker
 	license = Apache
 	makedepends = tar
-	depends = jdk8-openjre
+	depends = jdk8-openjdk
 	depends = ca-certificates-utils
 	provides = halyard
 	conflicts = halyard
